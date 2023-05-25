@@ -1,2 +1,3 @@
 # dailypractice
-This is to help people with doing DNRS program
+To help people with doing the DNRS program
+Uses local browser storage to save inputs such as name, symptoms, behaviours and proclamation
