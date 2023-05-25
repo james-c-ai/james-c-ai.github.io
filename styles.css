@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    width: calc(100% - 100px);
+
+}
+
+button:hover {
+    background: #555;
+}
+
+.input-field {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: calc(100% - 100px);  // Adjust this value to fit your needs
+}
+
+.label-field {
+    display: inline-block;
+    width: calc(100% - 100px);  // Adjust this value to fit your needs
+    text-align: left;
+}
+
+#pause-timer {
+  padding: 5px;
+}
+
+#update-inputs {
+  padding: 10px;
+}
+
+#circle-container {
+    position: relative;
+    width: 50vmin;
+    height: 50vmin;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#name-input-container {
+  position: relative;
+  align-items: left;
+  width: inherit;
+}
+
+#user-input-container {
+  position: relative;
+  width: 50vmin;
+  height: auto;
+  margin: 20px;
+  margin-bottom: 20px;
+  width: inherit;
+}
+
+#audio-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.circle {
+    position: absolute;
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 0;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .circle {
+      position: absolute;
+      width: 10vmin;
+      height: 10vmin;
+      border-radius: 50%;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      z-index: 0;
+      font-weight: 100;
+      font-size: 12px;
+    }
+}
+
+#circle-1 {
+  top: 20%;
+  right: 60%;
+  transform: translateX(-50%);
+  background-color: #d44f50;
+}
+
+#circle-2 {
+  top: 45%;
+  right: 60%;
+  transform: translateX(-50%);
+  background-color: #f1b16a;
+}
+
+#circle-3 {
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eded71;
+}
+
+#circle-4 {
+  top: 57%;
+  left: 70%;
+  transform: translateY(-50%);
+  background-color: #30aa71;
+}
+
+#circle-5 {
+  top: 32%;
+  left: 50%;
+  background-color: #1861ad;
+  transform: translateX(-50%);
+}
+
+#circle-6 {
+  top: 20%;
+  left: 80%;
+  background-color: #41a5bc;
+  transform: translateX(-50%);
+}
+
+#circle-7 {
+  top: 5%;
+  left: 50%;
+  background-color: #a988bd;
+  transform: translateX(-50%);
+}
+
+
+#daily-practice-info {
+    margin-top: 1rem;
+}
+
+#daily-practice-progress {
+    margin: 1rem;
+}
+
+#triangle {
+    position: absolute;
+    width: 5%;
+    height: 7%;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    opacity: 60%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: top 0.5s, left 0.5s, transform 0.5s;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+#change-text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#timer-container {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
