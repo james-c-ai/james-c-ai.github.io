@@ -1,22 +1,3 @@
-//audioplayer
-const audioFiles = ['40hz.mp3'];
-const audioPlayer = document.getElementById('audio-player');
-const playPauseButton = document.getElementById('play-pause-button');
-playPauseButton.addEventListener('click', function() {
-    if (audioPlayer.paused) {
-        audioPlayer.play();
-        playPauseButton.textContent = '⏸️ Pause audio hz';
-    } else {
-        audioPlayer.pause();
-        playPauseButton.textContent = '▶️ Play audio hz';
-    }
-});
-window.addEventListener('load', function() {
-    const randomFile = audioFiles[Math.floor(Math.random() * audioFiles.length)];
-    audioPlayer.src = randomFile;
-    audioPlayer.loop = true;
-});
-
 //timer code
 let timer = null;
 let timeElapsed = 0; // in seconds
